@@ -1,0 +1,145 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'bebas';
+    src: url('../Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+}
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+:root{
+        --cor0: #0B1C26;
+        --cor1: #8D9FA6;
+        --cor2: #314E59;
+        --cor3: rgb(0, 92, 169);
+        --cor4: #007AE1;
+        --cor5: #40A7FF;
+        --cor6: #00447C;
+        
+        --fontepadrao: Arial, Verdana, Helvetica, sans-serif;
+        --fontedestaque: bebas, cursive;  
+    }
+body{
+    font-family: var(--fontepadrao);
+}
+header{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor6));
+    color: white;
+    min-height: 70px;
+}
+header > h1{
+    font-family: var(--fontedestaque);
+    text-shadow: 2px 2px 0px black;
+    margin: auto;
+    padding: 10px;
+    
+}
+nav {
+    background-color: var(--cor6);
+    text-align: end;
+    padding: 7px;
+    box-shadow: 0px 5px 7px black;
+}
+nav > a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 7px;
+    color: white;
+    transition-duration: 0.2s;
+}
+nav > a:hover {
+    background-color: var(--cor4);
+    color: var(--cor3);
+}
+nav > a:active{
+    color: white;
+    padding: 5px;
+}
+main{
+     min-width: 300px;
+     max-width: 1800px;
+    
+}
+main img{
+    width: 200;
+    display: flex;
+}
+main > p{
+    margin: 15px 0px;
+    padding: 10px;
+    text-align: justify;
+} 
+h2{
+margin: 10px;
+padding: 10px;
+}
+h3{
+    font-family: var(--fontedestaque);
+}
+div.contatoc{
+    padding: 5px;
+    border: 2px;
+    display: inline-flex;
+}
+div.contatob{
+    padding: 5px;
+    border: 2px;
+    display: inline-block;
+}
+div.Jogos{
+    background-color: var(--cor4);
+    color: white;
+}
+a.site{
+    color: white;
+    text-decoration: none;
+}
+a.site:hover{
+    text-decoration: underline;
+}
+a.site:active{
+    color: var(--cor3);
+}
+ul.site{
+    list-style-type: none;
+}
+footer{
+    background-color: var(--cor3);
+    color: white;
+    min-width: 250px;
+    max-width: 100%;
+}
+footer p.fila{
+    text-align: center;
+}
+footer div.site{
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+    text-decoration: none;
+   min-width: 250px;
+    max-width: 100%;
+
+}
+footer div.contato{
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    min-width: 250px;
+    max-width: 100%;
+
+}
+footer div.redes{
+    text-align: end;
+   padding: 20px;
+    margin: 10px;;
+    min-width: 250px;
+    max-width: 100%;
+}
+footer div.footer{
+    text-align: center;
+  box-sizing: border-box;
+    min-width: 250px;
+    max-width: 100%;
+}
