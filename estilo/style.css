@@ -4,9 +4,19 @@
     src: url('../Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
 }
 * {
-    margin: 0px;
-    padding: 0px;
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+#login{
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    color: var(--cor3);
 }
 :root{
         --cor0: #0B1C26;
@@ -77,6 +87,23 @@ padding: 10px;
 h3{
     font-family: var(--fontedestaque);
 }
+article{
+    padding-bottom: 15px;
+}
+div.not{
+    background-color: var(--cor4);
+    border: 2px ;
+    padding: 10px;
+
+div.notic{
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+}
+
 div.contatoc{
     padding: 5px;
     border: 2px;
@@ -91,6 +118,15 @@ div.Jogos{
     background-color: var(--cor4);
     color: white;
 }
+div.jogo{
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 10px;
+    width: 600px;
+    height: 300px;
+    background-color: white;
+    margin: 10px;
+}
 a.site{
     color: white;
     text-decoration: none;
@@ -104,42 +140,55 @@ a.site:active{
 ul.site{
     list-style-type: none;
 }
-footer{
-    background-color: var(--cor3);
+footer {
+    background-color: var(--cor6);
     color: white;
-    min-width: 250px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
     max-width: 100%;
 }
-footer p.fila{
-    text-align: center;
-}
-footer div.site{
-    padding: 20px;
+.site, .contato, .redes {
+    flex: 1 1 220px;
+    min-width: 160px;
     margin: 10px;
-    text-align: left;
+}
+.site ul {
+    list-style: none;
+    padding: 0;
+}
+.site a {
+    color: white;
     text-decoration: none;
-   min-width: 250px;
-    max-width: 100%;
-
+    display: inline-block;
 }
-footer div.contato{
-    text-align: center;
-    padding: 20px;
-    margin: 10px;
-    min-width: 250px;
-    max-width: 100%;
-
+.site a:hover {
+    text-decoration: underline;
 }
-footer div.redes{
-    text-align: end;
-   padding: 20px;
-    margin: 10px;;
-    min-width: 250px;
-    max-width: 100%;
+.contato p {
+    margin: 5px 0;
 }
-footer div.footer{
-    text-align: center;
-  box-sizing: border-box;
-    min-width: 250px;
-    max-width: 100%;
+.fila {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+@media (max-width: 520px) {
+    .footer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .site, .contato, .redes {
+        min-width: 100%;
+        margin: 8px 0;
+    }
+    footer {
+        padding: 16px 10px;
+    }
 }
