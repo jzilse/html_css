@@ -94,7 +94,7 @@ div.not{
     background-color: var(--cor4);
     border: 2px ;
     padding: 10px;
-
+}
 div.notic{
     border: 1px solid black;
     display: inline-block;
